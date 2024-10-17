@@ -12,7 +12,6 @@
   @apply: right-0 border-green-400;
   right: 2px;
   border-color: #000;
-  top: 1px;
 }
 .toggle-checkbox:checked + .toggle-label {
   @apply: bg-green-400;

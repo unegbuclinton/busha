@@ -20,7 +20,7 @@ const Switch = ({ setIsChecked, isChecked }) => {
           id='toggle'
           checked={isChecked}
           onChange={handleToggle}
-          className='toggle-checkbox absolute ml-[2px] top-[1px] block w-4 h-4 rounded-full bg-white appearance-none cursor-pointer'
+          className='toggle-checkbox absolute ml-[2px] mt-[0.5px] top-[1px] block w-4 h-4 rounded-full bg-white appearance-none cursor-pointer'
         />
         <label
           htmlFor='toggle'
