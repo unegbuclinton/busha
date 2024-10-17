@@ -14,6 +14,7 @@ const ProfileAccordion = () => {
   const handleProfileVisibility = () => {
     setOpenProfile((prev) => !prev)
   }
+
   return (
     <div className='relative'>
       <div
@@ -42,6 +43,7 @@ const ProfileAccordion = () => {
               <div
                 key={index}
                 className='flex items-center justify-between gap-2 mb-2'
+                onClick={handleProfileVisibility}
               >
                 <div className='flex items-center gap-2'>
                   <p className='text-xl px-3 py-1.5 rounded-lg bg-light-grey w-fit font-semibold'>
@@ -55,13 +57,19 @@ const ProfileAccordion = () => {
           })}
         </div>
         <div className='border-b border-light-grey'></div>
-        <p className='mt-2 flex gap-2 items-center'>
+        <p
+          onClick={handleProfileVisibility}
+          className='mt-2 flex gap-2 items-center'
+        >
           <span>
             <IoAdd size={20} />
           </span>
           Create new account
         </p>
-        <p className='mt-2 flex gap-2 items-center'>
+        <p
+          onClick={handleProfileVisibility}
+          className='mt-2 flex gap-2 items-center'
+        >
           <span>
             <HiOutlineLogout size={20} />
           </span>

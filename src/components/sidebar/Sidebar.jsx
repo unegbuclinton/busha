@@ -11,7 +11,7 @@ import ProfileAccordion from '../profile-accordion/ProfileAccordion'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const Sidebar = ({ isOpenHamburger, onCloseHamburger, setActiveSidebar }) => {
-  const [currentPath, setCurrentPath] = useState('Home')
+  const [currentPath, setCurrentPath] = useState('')
   const links = [
     { title: 'Home', icon: <TiHome size={22} /> },
     { title: 'Balances', icon: <RiExchangeBoxFill size={22} /> },
@@ -30,7 +30,11 @@ const Sidebar = ({ isOpenHamburger, onCloseHamburger, setActiveSidebar }) => {
   useEffect(() => {
     const fullURL = window.location.href
     const pathAfterSlash = fullURL.split('/').pop()
-    setCurrentPath(pathAfterSlash)
+    if (pathAfterSlash.length > 1) {
+      setCurrentPath(pathAfterSlash)
+    } else {
+      setCurrentPath('#Payments')
+    }
   }, [window.location.href])
 
   return (
