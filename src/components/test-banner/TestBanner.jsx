@@ -22,8 +22,8 @@ const TestBanner = ({ show }) => {
       <div ref={contentRef} className='px-3 pt-2 pb-4 text-white'>
         <h4 className='mb-3 font-medium'>Test mode</h4>
         <p className='mb-2 font-normal text-sm inline-block'>
-          You’re using test data. No real transactions will be processed.
-          <a className='underline flex items-center gap-2' href='#'>
+          You’re using test data. No real transactions will be processed.{' '}
+          <a className='underline inline-flex items-center gap-2' href='#'>
             Learn more about test mode
             <span>
               <Routing />

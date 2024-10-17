@@ -21,7 +21,7 @@ function App() {
         />
         <section className='p-3'>
           <div className='flex items-center justify-between mb-4'>
-            <h3 className='font-bold text-2xl'>Balances</h3>
+            <h3 className='font-[600] text-2xl'>Balances</h3>
             <Button>
               <div className='flex gap-2 items-center'>
                 <Routing />
@@ -30,7 +30,7 @@ function App() {
             </Button>
           </div>
           <div className='rounded-t-lg border-[#F3F3F3] border py-3 px-2 text-sm'>
-            <p className='text-[#666666] text-base'>Total balance</p>
+            <p className='text-[#666666] text-sm'>Total balance</p>
             <p className='text-2xl py-1.5'>$0.00</p>
             <Tab />
             <div className='px-2'>

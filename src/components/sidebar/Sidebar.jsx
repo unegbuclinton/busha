@@ -11,7 +11,7 @@ import ProfileAccordion from '../profile-accordion/ProfileAccordion'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const Sidebar = ({ isOpenHamburger, onCloseHamburger, setActiveSidebar }) => {
-  const [currentPath, setCurrentPath] = useState('')
+  const [currentPath, setCurrentPath] = useState('Home')
   const links = [
     { title: 'Home', icon: <TiHome size={22} /> },
     { title: 'Balances', icon: <RiExchangeBoxFill size={22} /> },
